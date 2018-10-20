@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2018_10_19_101553) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "sub_categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -22,8 +25,8 @@ ActiveRecord::Schema.define(version: 2018_10_19_101553) do
     t.string "title"
     t.datetime "due_date"
     t.boolean "status"
-    t.integer "sub_category_id"
-    t.integer "user_id"
+    t.bigint "sub_category_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "sort"
@@ -38,4 +41,6 @@ ActiveRecord::Schema.define(version: 2018_10_19_101553) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "to_do_categories", "sub_categories"
+  add_foreign_key "to_do_categories", "users"
 end
