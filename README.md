@@ -20,9 +20,9 @@ I have created 3 model in this application as per requirement named-
 
 Heroku link
 
-https://todowithdraganddrop.herokuapp.com/users/sign_up
+https://todocategoryapp.herokuapp.com/
 
 
 ERD diagram link
 
-https://todowithdraganddrop.herokuapp.com/erd.pdf
+https://todocategoryapp.herokuapp.com/erd.pdf
