@@ -1,0 +1,7 @@
+<%if category.status?%>
+<%=link_to '<button class="btn btn-sm btn-success">Completed</button>'.html_safe, completed_to_do_category_url(category),method: :post,remote: true%>
+<%else%>
+<%=link_to '<button class="btn btn-sm btn-danger">UnCompleted</button>'.html_safe, completed_to_do_category_url(category),method: :post,remote: true%>
+<%end%>
+
+        		

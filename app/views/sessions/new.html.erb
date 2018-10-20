@@ -1,0 +1,14 @@
+<div class="custom-container">
+   <h1 class="mb-3" align="center">Log In</h1>
+   <%= form_with scope: :session,url: sessions_path, id:"session_id" do |f| %>
+   <div class="row">
+   <label for="email"><b>Email</b></label>
+   <%= f.text_field :email,  class: "form-control" %>
+   </div>
+   <div class="row">
+   <label for="psw"><b>Password</b></label>
+   <%= f.password_field :password , class: "form-control" %>
+   </div>
+   <%= submit_tag "Log In" ,class: "btn btn-success mt-3"%>
+   <% end %>
+</div>
