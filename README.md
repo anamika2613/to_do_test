@@ -1,26 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this application I have created ToDo Index page , where Todo can be reordered with drag and drop functionality.
 
-Things you may want to cover:
+For drag and drop(reordering) functionality I used -
+  gem "rails-sortable"
 
-* Ruby version
+For this application we are using ruby-2.4.1 and Rails-5.2.1
 
-* System dependencies
+For user authentication(sign up, login) I used 
+   customs methods with gem bcrypt
 
-* Configuration
 
-* Database creation
+I have created 3 model in this application as per requirement named-
+ 
+ User
+ ToDoCategory
+ SubCategory
 
-* Database initialization
 
-* How to run the test suite
+Heroku link
 
-* Services (job queues, cache servers, search engines, etc.)
+https://todowithdraganddrop.herokuapp.com/users/sign_up
 
-* Deployment instructions
 
-* ...
-# to_do_test
-# to_do_test
+ERD diagram link
+
+https://todowithdraganddrop.herokuapp.com/erd.pdf
